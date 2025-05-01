@@ -471,12 +471,18 @@ Running éshell inité, which:
  - sets mamba executable to: "/Users/jkozik/miniforge3/bin/mamba"
 The following has been added in your "/Users/jkozik/.zshrc" file
 
+Running `shell init`, which:
+ - modifies RC file: "/Users/jkozik/.zshrc"
+ - generates config for root prefix: "/Users/jkozik/miniforge3"
+ - sets mamba executable to: "/Users/jkozik/miniforge3/bin/mamba"
+The following has been added in your "/Users/jkozik/.zshrc" file
+
 # >>> mamba initialize >>>
 # !! Contents within this block are managed by 'mamba shell init' !!
 export MAMBA_EXE='/Users/jkozik/miniforge3/bin/mamba';
 export MAMBA_ROOT_PREFIX='/Users/jkozik/miniforge3';
 __mamba_setup="$("$MAMBA_EXE" shell hook --shell zsh --root-prefix "$MAMBA_ROOT_PREFIX" 2> /dev/null)"
-if Ä $? -eq 0 Å; then
+if [ $? -eq 0 ]; then
     eval "$__mamba_setup"
 else
     alias mamba="$MAMBA_EXE"  # Fallback on help from mamba activate
@@ -485,5 +491,5 @@ unset __mamba_setup
 # <<< mamba initialize <<<
 
 Thank you for installing Miniforge3!
-jkozikÉJacks-Mac-mini Downloads %
+jkozik@Jacks-Mac-mini ~ %    
 ```
