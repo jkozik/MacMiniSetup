@@ -1,5 +1,5 @@
 # MacMiniSetup
-Notes on getting Mac Mini M4 setup.  Includes AI tools.
+Notes on getting Mac Mini M4 setup with VSCode for remote access.  Includes AI tools.
 
 For starters, I followed [pytorch-apple-silicon](https://github.com/mrdbourke/pytorch-apple-silicon) by [mrdbourke](https://github.com/mrdbourke).  I want to get the basic Pytorch / Python working ontop of Apple Silicon.
 
@@ -97,346 +97,7 @@ Miniforge3 will now be installed into this location:
 Ä/Users/jkozik/miniforge3Å >>>
 PREFIX=/Users/jkozik/miniforge3
 Unpacking payload ...
-Extracting bzip2-1.0.8-h99b78c6_7.conda
-Extracting c-ares-1.34.4-h5505292_0.conda
-Extracting ca-certificates-2025.1.31-hf0a4a13_0.conda
-Extracting icu-75.1-hfee45f7_0.conda
-Extracting libcxx-20.1.2-ha82da77_0.conda
-Extracting libev-4.33-h93a5062_2.conda
-Extracting libexpat-2.7.0-h286801f_0.conda
-Extracting libffi-3.4.6-h1da3d7d_1.conda
-Extracting libiconv-1.18-hfe07756_1.conda
-Extracting liblzma-5.8.1-h39f12f2_0.conda
-Extracting libzlib-1.3.1-h8359307_2.conda
-Extracting lzo-2.10-h93a5062_1001.conda
-Extracting ncurses-6.5-h5e97a16_3.conda
-Extracting pybind11-abi-4-hd8ed1ab_3.tar.bz2
-Extracting python_abi-3.12-6_cp312.conda
-Extracting reproc-14.2.5.post0-h5505292_0.conda
-Extracting tzdata-2025b-h78e105d_0.conda
-Extracting cpp-expected-1.1.0-hffc8910_0.conda
-Extracting fmt-11.1.4-h440487c_1.conda
-Extracting libedit-3.1.20250104-pl5321hafb1f1b_0.conda
-Extracting libsolv-0.7.30-h6c9b7f8_0.conda
-Extracting libsqlite-3.49.1-h3f77e49_2.conda
-Extracting libxml2-2.13.7-h52572c6_1.conda
-Extracting lz4-c-1.10.0-h286801f_1.conda
-Extracting nlohmann_json-3.11.3-h00cdb27_1.conda
-Extracting openssl-3.4.1-h81ee809_0.conda
-Extracting readline-8.2-h1d1bf99_2.conda
-Extracting reproc-cpp-14.2.5.post0-h286801f_0.conda
-Extracting simdjson-3.12.3-ha393de7_0.conda
-Extracting tk-8.6.13-h5083fa2_1.conda
-Extracting yaml-cpp-0.8.0-h13dd4ca_0.conda
-Extracting zstd-1.5.7-h6491c7d_2.conda
-Extracting krb5-1.21.3-h237132a_0.conda
-Extracting libarchive-3.7.7-h3b16cec_3.conda
-Extracting libnghttp2-1.64.0-h6d7220d_0.conda
-Extracting libssh2-1.11.1-h9cc3647_0.conda
-Extracting python-3.12.9-hc22306f_1_cpython.conda
-Extracting spdlog-1.15.2-h008cadb_0.conda
-Extracting libcurl-8.13.0-h73640d1_0.conda
-Extracting menuinst-2.2.0-py312h81bd7bf_0.conda
-Extracting archspec-0.2.5-pyhd8ed1ab_0.conda
-Extracting boltons-24.0.0-pyhd8ed1ab_1.conda
-Extracting brotli-python-1.1.0-py312hde4cb15_2.conda
-Extracting certifi-2025.1.31-pyhd8ed1ab_0.conda
-Extracting charset-normalizer-3.4.1-pyhd8ed1ab_0.conda
-Extracting colorama-0.4.6-pyhd8ed1ab_1.conda
-Extracting distro-1.9.0-pyhd8ed1ab_1.conda
-Extracting frozendict-2.4.6-py312h0bf5046_0.conda
-Extracting hpack-4.1.0-pyhd8ed1ab_0.conda
-Extracting hyperframe-6.1.0-pyhd8ed1ab_0.conda
-Extracting idna-3.10-pyhd8ed1ab_1.conda
-Extracting jsonpointer-3.0.0-py312h81bd7bf_1.conda
-Extracting libmamba-2.0.8-h7c3736b_2.conda
-Extracting packaging-24.2-pyhd8ed1ab_2.conda
-Extracting platformdirs-4.3.7-pyh29332c3_0.conda
-Extracting pluggy-1.5.0-pyhd8ed1ab_1.conda
-Extracting pycosat-0.6.6-py312hea69d52_2.conda
-Extracting pycparser-2.22-pyh29332c3_1.conda
-Extracting pysocks-1.7.1-pyha55dd90_7.conda
-Extracting ruamel.yaml.clib-0.2.8-py312h0bf5046_1.conda
-Extracting setuptools-78.1.0-pyhff2d567_0.conda
-Extracting truststore-0.10.1-pyh29332c3_0.conda
-Extracting wheel-0.45.1-pyhd8ed1ab_1.conda
-Extracting cffi-1.17.1-py312h0fad829_0.conda
-Extracting h2-4.2.0-pyhd8ed1ab_0.conda
-Extracting jsonpatch-1.33-pyhd8ed1ab_1.conda
-Extracting libmambapy-2.0.8-py312h9b24f82_2.conda
-Extracting mamba-2.0.8-h105ca85_2.conda
-Extracting pip-25.0.1-pyh8b19718_0.conda
-Extracting ruamel.yaml-0.18.10-py312hea69d52_0.conda
-Extracting tqdm-4.67.1-pyhd8ed1ab_1.conda
-Extracting zstandard-0.23.0-py312hea69d52_1.conda
-Extracting conda-package-streaming-0.11.0-pyhd8ed1ab_1.conda
-Extracting urllib3-2.3.0-pyhd8ed1ab_0.conda
-Extracting requests-2.32.3-pyhd8ed1ab_1.conda
-Extracting conda-package-handling-2.4.0-pyh7900ff3_2.conda
-Extracting conda-libmamba-solver-25.3.0-pyhd8ed1ab_0.conda
-Extracting conda-25.3.0-py312h81bd7bf_0.conda
-
-Installing base environment...
-
-Transaction
-
-  Prefix: /Users/jkozik/miniforge3
-
-  Updating specs:
-
-   - bzip2==1.0.8=h99b78c6_7
-   - c-ares==1.34.4=h5505292_0
-   - ca-certificates==2025.1.31=hf0a4a13_0
-   - icu==75.1=hfee45f7_0
-   - libcxx==20.1.2=ha82da77_0
-   - libev==4.33=h93a5062_2
-   - libexpat==2.7.0=h286801f_0
-   - libffi==3.4.6=h1da3d7d_1
-   - libiconv==1.18=hfe07756_1
-   - liblzma==5.8.1=h39f12f2_0
-   - libzlib==1.3.1=h8359307_2
-   - lzo==2.10=h93a5062_1001
-   - ncurses==6.5=h5e97a16_3
-   - pybind11-abi==4=hd8ed1ab_3
-   - python_abi==3.12=6_cp312
-   - reproc==14.2.5.0post0=h5505292_0
-   - tzdata==2025b=h78e105d_0
-   - cpp-expected==1.1.0=hffc8910_0
-   - fmt==11.1.4=h440487c_1
-   - libedit==3.1.20250104=pl5321hafb1f1b_0
-   - libsolv==0.7.30=h6c9b7f8_0
-   - libsqlite==3.49.1=h3f77e49_2
-   - libxml2==2.13.7=h52572c6_1
-   - lz4-c==1.10.0=h286801f_1
-   - nlohmann_json==3.11.3=h00cdb27_1
-   - openssl==3.4.1=h81ee809_0
-   - readline==8.2=h1d1bf99_2
-   - reproc-cpp==14.2.5.0post0=h286801f_0
-   - simdjson==3.12.3=ha393de7_0
-   - tk==8.6.13=h5083fa2_1
-   - yaml-cpp==0.8.0=h13dd4ca_0
-   - zstd==1.5.7=h6491c7d_2
-   - krb5==1.21.3=h237132a_0
-   - libarchive==3.7.7=h3b16cec_3
-   - libnghttp2==1.64.0=h6d7220d_0
-   - libssh2==1.11.1=h9cc3647_0
-   - python==3.12.9=hc22306f_1_cpython
-   - spdlog==1.15.2=h008cadb_0
-   - libcurl==8.13.0=h73640d1_0
-   - menuinst==2.2.0=py312h81bd7bf_0
-   - archspec==0.2.5=pyhd8ed1ab_0
-   - boltons==24.0.0=pyhd8ed1ab_1
-   - brotli-python==1.1.0=py312hde4cb15_2
-   - certifi==2025.1.31=pyhd8ed1ab_0
-   - charset-normalizer==3.4.1=pyhd8ed1ab_0
-   - colorama==0.4.6=pyhd8ed1ab_1
-   - distro==1.9.0=pyhd8ed1ab_1
-   - frozendict==2.4.6=py312h0bf5046_0
-   - hpack==4.1.0=pyhd8ed1ab_0
-   - hyperframe==6.1.0=pyhd8ed1ab_0
-   - idna==3.10=pyhd8ed1ab_1
-   - jsonpointer==3.0.0=py312h81bd7bf_1
-   - libmamba==2.0.8=h7c3736b_2
-   - packaging==24.2=pyhd8ed1ab_2
-   - platformdirs==4.3.7=pyh29332c3_0
-   - pluggy==1.5.0=pyhd8ed1ab_1
-   - pycosat==0.6.6=py312hea69d52_2
-   - pycparser==2.22=pyh29332c3_1
-   - pysocks==1.7.1=pyha55dd90_7
-   - ruamel.yaml.clib==0.2.8=py312h0bf5046_1
-   - setuptools==78.1.0=pyhff2d567_0
-   - truststore==0.10.1=pyh29332c3_0
-   - wheel==0.45.1=pyhd8ed1ab_1
-   - cffi==1.17.1=py312h0fad829_0
-   - h2==4.2.0=pyhd8ed1ab_0
-   - jsonpatch==1.33=pyhd8ed1ab_1
-   - libmambapy==2.0.8=py312h9b24f82_2
-   - mamba==2.0.8=h105ca85_2
-   - pip==25.0.1=pyh8b19718_0
-   - ruamel.yaml==0.18.10=py312hea69d52_0
-   - tqdm==4.67.1=pyhd8ed1ab_1
-   - zstandard==0.23.0=py312hea69d52_1
-   - conda-package-streaming==0.11.0=pyhd8ed1ab_1
-   - urllib3==2.3.0=pyhd8ed1ab_0
-   - requests==2.32.3=pyhd8ed1ab_1
-   - conda-package-handling==2.4.0=pyh7900ff3_2
-   - conda-libmamba-solver==25.3.0=pyhd8ed1ab_0
-   - conda==25.3.0=py312h81bd7bf_0
-
-
-  Package                         Version  Build               Channel         Size
-─────────────────────────────────────────────────────────────────────────────────────
-  Install:
-─────────────────────────────────────────────────────────────────────────────────────
-
-  + archspec                        0.2.5  pyhd8ed1ab_0        conda-forge
-  + boltons                        24.0.0  pyhd8ed1ab_1        conda-forge
-  + brotli-python                   1.1.0  py312hde4cb15_2     conda-forge
-  + bzip2                           1.0.8  h99b78c6_7          conda-forge
-  + c-ares                         1.34.4  h5505292_0          conda-forge
-  + ca-certificates             2025.1.31  hf0a4a13_0          conda-forge
-  + certifi                     2025.1.31  pyhd8ed1ab_0        conda-forge
-  + cffi                           1.17.1  py312h0fad829_0     conda-forge
-  + charset-normalizer              3.4.1  pyhd8ed1ab_0        conda-forge
-  + colorama                        0.4.6  pyhd8ed1ab_1        conda-forge
-  + conda                          25.3.0  py312h81bd7bf_0     conda-forge
-  + conda-libmamba-solver          25.3.0  pyhd8ed1ab_0        conda-forge
-  + conda-package-handling          2.4.0  pyh7900ff3_2        conda-forge
-  + conda-package-streaming        0.11.0  pyhd8ed1ab_1        conda-forge
-  + cpp-expected                    1.1.0  hffc8910_0          conda-forge
-  + distro                          1.9.0  pyhd8ed1ab_1        conda-forge
-  + fmt                            11.1.4  h440487c_1          conda-forge
-  + frozendict                      2.4.6  py312h0bf5046_0     conda-forge
-  + h2                              4.2.0  pyhd8ed1ab_0        conda-forge
-  + hpack                           4.1.0  pyhd8ed1ab_0        conda-forge
-  + hyperframe                      6.1.0  pyhd8ed1ab_0        conda-forge
-  + icu                              75.1  hfee45f7_0          conda-forge
-  + idna                             3.10  pyhd8ed1ab_1        conda-forge
-  + jsonpatch                        1.33  pyhd8ed1ab_1        conda-forge
-  + jsonpointer                     3.0.0  py312h81bd7bf_1     conda-forge
-  + krb5                           1.21.3  h237132a_0          conda-forge
-  + libarchive                      3.7.7  h3b16cec_3          conda-forge
-  + libcurl                        8.13.0  h73640d1_0          conda-forge
-  + libcxx                         20.1.2  ha82da77_0          conda-forge
-  + libedit                  3.1.20250104  pl5321hafb1f1b_0    conda-forge
-  + libev                            4.33  h93a5062_2          conda-forge
-  + libexpat                        2.7.0  h286801f_0          conda-forge
-  + libffi                          3.4.6  h1da3d7d_1          conda-forge
-  + libiconv                         1.18  hfe07756_1          conda-forge
-  + liblzma                         5.8.1  h39f12f2_0          conda-forge
-  + libmamba                        2.0.8  h7c3736b_2          conda-forge
-  + libmambapy                      2.0.8  py312h9b24f82_2     conda-forge
-  + libnghttp2                     1.64.0  h6d7220d_0          conda-forge
-  + libsolv                        0.7.30  h6c9b7f8_0          conda-forge
-  + libsqlite                      3.49.1  h3f77e49_2          conda-forge
-  + libssh2                        1.11.1  h9cc3647_0          conda-forge
-  + libxml2                        2.13.7  h52572c6_1          conda-forge
-  + libzlib                         1.3.1  h8359307_2          conda-forge
-  + lz4-c                          1.10.0  h286801f_1          conda-forge
-  + lzo                              2.10  h93a5062_1001       conda-forge
-  + mamba                           2.0.8  h105ca85_2          conda-forge
-  + menuinst                        2.2.0  py312h81bd7bf_0     conda-forge
-  + ncurses                           6.5  h5e97a16_3          conda-forge
-  + nlohmann_json                  3.11.3  h00cdb27_1          conda-forge
-  + openssl                         3.4.1  h81ee809_0          conda-forge
-  + packaging                        24.2  pyhd8ed1ab_2        conda-forge
-  + pip                            25.0.1  pyh8b19718_0        conda-forge
-  + platformdirs                    4.3.7  pyh29332c3_0        conda-forge
-  + pluggy                          1.5.0  pyhd8ed1ab_1        conda-forge
-  + pybind11-abi                        4  hd8ed1ab_3          conda-forge
-  + pycosat                         0.6.6  py312hea69d52_2     conda-forge
-  + pycparser                        2.22  pyh29332c3_1        conda-forge
-  + pysocks                         1.7.1  pyha55dd90_7        conda-forge
-  + python                         3.12.9  hc22306f_1_cpython  conda-forge
-  + python_abi                       3.12  6_cp312             conda-forge
-  + readline                          8.2  h1d1bf99_2          conda-forge
-  + reproc                   14.2.5.post0  h5505292_0          conda-forge
-  + reproc-cpp               14.2.5.post0  h286801f_0          conda-forge
-  + requests                       2.32.3  pyhd8ed1ab_1        conda-forge
-  + ruamel.yaml                   0.18.10  py312hea69d52_0     conda-forge
-  + ruamel.yaml.clib                0.2.8  py312h0bf5046_1     conda-forge
-  + setuptools                     78.1.0  pyhff2d567_0        conda-forge
-  + simdjson                       3.12.3  ha393de7_0          conda-forge
-  + spdlog                         1.15.2  h008cadb_0          conda-forge
-  + tk                             8.6.13  h5083fa2_1          conda-forge
-  + tqdm                           4.67.1  pyhd8ed1ab_1        conda-forge
-  + truststore                     0.10.1  pyh29332c3_0        conda-forge
-  + tzdata                          2025b  h78e105d_0          conda-forge
-  + urllib3                         2.3.0  pyhd8ed1ab_0        conda-forge
-  + wheel                          0.45.1  pyhd8ed1ab_1        conda-forge
-  + yaml-cpp                        0.8.0  h13dd4ca_0          conda-forge
-  + zstandard                      0.23.0  py312hea69d52_1     conda-forge
-  + zstd                            1.5.7  h6491c7d_2          conda-forge
-
-  Summary:
-
-  Install: 78 packages
-
-  Total download: 0 B
-
-─────────────────────────────────────────────────────────────────────────────────────
-
-
-
-Transaction starting
-Linking bzip2-1.0.8-h99b78c6_7
-Linking c-ares-1.34.4-h5505292_0
-Linking ca-certificates-2025.1.31-hf0a4a13_0
-Linking icu-75.1-hfee45f7_0
-Linking libcxx-20.1.2-ha82da77_0
-Linking libev-4.33-h93a5062_2
-Linking libexpat-2.7.0-h286801f_0
-Linking libffi-3.4.6-h1da3d7d_1
-Linking libiconv-1.18-hfe07756_1
-Linking liblzma-5.8.1-h39f12f2_0
-Linking libzlib-1.3.1-h8359307_2
-Linking lzo-2.10-h93a5062_1001
-Linking ncurses-6.5-h5e97a16_3
-Linking pybind11-abi-4-hd8ed1ab_3
-Linking python_abi-3.12-6_cp312
-Linking reproc-14.2.5.post0-h5505292_0
-Linking tzdata-2025b-h78e105d_0
-Linking cpp-expected-1.1.0-hffc8910_0
-Linking fmt-11.1.4-h440487c_1
-Linking libedit-3.1.20250104-pl5321hafb1f1b_0
-Linking libsolv-0.7.30-h6c9b7f8_0
-Linking libsqlite-3.49.1-h3f77e49_2
-Linking libxml2-2.13.7-h52572c6_1
-Linking lz4-c-1.10.0-h286801f_1
-Linking nlohmann_json-3.11.3-h00cdb27_1
-Linking openssl-3.4.1-h81ee809_0
-Linking readline-8.2-h1d1bf99_2
-Linking reproc-cpp-14.2.5.post0-h286801f_0
-Linking simdjson-3.12.3-ha393de7_0
-Linking tk-8.6.13-h5083fa2_1
-Linking yaml-cpp-0.8.0-h13dd4ca_0
-Linking zstd-1.5.7-h6491c7d_2
-Linking krb5-1.21.3-h237132a_0
-Linking libarchive-3.7.7-h3b16cec_3
-Linking libnghttp2-1.64.0-h6d7220d_0
-Linking libssh2-1.11.1-h9cc3647_0
-Linking python-3.12.9-hc22306f_1_cpython
-Linking spdlog-1.15.2-h008cadb_0
-Linking libcurl-8.13.0-h73640d1_0
-Linking menuinst-2.2.0-py312h81bd7bf_0
-Linking archspec-0.2.5-pyhd8ed1ab_0
-Linking boltons-24.0.0-pyhd8ed1ab_1
-Linking brotli-python-1.1.0-py312hde4cb15_2
-Linking certifi-2025.1.31-pyhd8ed1ab_0
-Linking charset-normalizer-3.4.1-pyhd8ed1ab_0
-Linking colorama-0.4.6-pyhd8ed1ab_1
-Linking distro-1.9.0-pyhd8ed1ab_1
-Linking frozendict-2.4.6-py312h0bf5046_0
-Linking hpack-4.1.0-pyhd8ed1ab_0
-Linking hyperframe-6.1.0-pyhd8ed1ab_0
-Linking idna-3.10-pyhd8ed1ab_1
-Linking jsonpointer-3.0.0-py312h81bd7bf_1
-Linking libmamba-2.0.8-h7c3736b_2
-Linking packaging-24.2-pyhd8ed1ab_2
-Linking platformdirs-4.3.7-pyh29332c3_0
-Linking pluggy-1.5.0-pyhd8ed1ab_1
-Linking pycosat-0.6.6-py312hea69d52_2
-Linking pycparser-2.22-pyh29332c3_1
-Linking pysocks-1.7.1-pyha55dd90_7
-Linking ruamel.yaml.clib-0.2.8-py312h0bf5046_1
-Linking setuptools-78.1.0-pyhff2d567_0
-Linking truststore-0.10.1-pyh29332c3_0
-Linking wheel-0.45.1-pyhd8ed1ab_1
-Linking cffi-1.17.1-py312h0fad829_0
-Linking h2-4.2.0-pyhd8ed1ab_0
-Linking jsonpatch-1.33-pyhd8ed1ab_1
-Linking libmambapy-2.0.8-py312h9b24f82_2
-Linking mamba-2.0.8-h105ca85_2
-Linking pip-25.0.1-pyh8b19718_0
-Linking ruamel.yaml-0.18.10-py312hea69d52_0
-Linking tqdm-4.67.1-pyhd8ed1ab_1
-Linking zstandard-0.23.0-py312hea69d52_1
-Linking conda-package-streaming-0.11.0-pyhd8ed1ab_1
-Linking urllib3-2.3.0-pyhd8ed1ab_0
-Linking requests-2.32.3-pyhd8ed1ab_1
-Linking conda-package-handling-2.4.0-pyh7900ff3_2
-Linking conda-libmamba-solver-25.3.0-pyhd8ed1ab_0
-Linking conda-25.3.0-py312h81bd7bf_0
+ . . . editted 100s of lines of installation messages
 
 Transaction finished
 
@@ -502,16 +163,17 @@ Log out, log back in and verify some basics. Verify that the "base" shows in the
 Python 3.12.9
 (base) jkozik@Jacks-Mac-mini ~ %
 ```
+I am showing this detail because, I did this myself incorrectly.  Don't forget to say `yes` above.  The default python packages don't always work and conda environments, or other local venv-like environments, are needed. 
 # Setup VSCode Remote
 To make sure that everything is setup correctly, open up VSCode remotely.  From the home directory, install Jupyter Notebook extension.
 ![image](https://github.com/user-attachments/assets/fae69cbb-5f19-4acc-86c5-2f9a48f15218)
-Then in a project folder, create an empty .ipynb file. VScode will recognize that this is a jupyteThr notebook and prompt to install python extension.
+Then in a project folder, create an empty .ipynb file. VScode will recognize that this is a jupyter notebook and prompt to install python extension.
 
 ![image](https://github.com/user-attachments/assets/767ff1b4-09c5-4dd2-b722-f2f65dcd4655)
 
 In the upper right of the vscode scren, there's a Select Kernal button.  VSCode will prompt for what environment to run.  Look for the one with conda in the path.
 ![image](https://github.com/user-attachments/assets/91050e87-0465-4308-b1d8-e0e0f68e844a)
-Next try a simple arithmetic operation.  Note:  VSCode will prompt to install a kernal package.  This is normal.
+Next try a simple arithmetic operation, 1+1, in the `Code` section.  Note:  VSCode will prompt to install a kernal package.  This is normal.
 
 ![image](https://github.com/user-attachments/assets/f3f86573-fb8c-4249-a5b5-c11e1065b27b)
 
@@ -519,8 +181,9 @@ After the install, the notebook will show a result
 
 ![image](https://github.com/user-attachments/assets/49c6b366-0fda-407a-983f-598410ce3e85)
 
+I am showing this step, because I tried to install VSCode extensions in a subfolder.  That doesn't always work and in the case of jupyter notebooks, it definitely does not work.  My problem was that it was failing silently and I was cluelessly trying things when was really not that difficult. 
 
-## Setup a conda for Python 3.8
+## Setup a conda environment for Python 3.8
 To use Pytorch, the current version of Python wont work on Apple Silicon.  (So I am told).  Thus conda is used to setup an environment a Python 3.8 environment.  
 ```
 (base) jkozik@Jacks-Mac-mini ~ % cd projects
@@ -582,10 +245,13 @@ Executing transaction: done
 (base) jkozik@Jacks-Mac-mini MacMiniSetup % conda activate /Users/jkozik/projects/MacMiniSetup/env
 (/Users/jkozik/projects/MacMiniSetup/env) jkozik@Jacks-Mac-mini MacMiniSetup %
 ```
+This environment is installed just for this project directory.  Whenever this project is being worked, the conda environment needs to be activated.  The manual command line is nice and straight forward.  When you get into VSCode, it will see the environment in the current folder and also all the other environments defined for the account.  
+
 ## Update VSCode Kernal to point to new environment
 Look at the VSCode screen and select the base enviroment on the upper right.
 ![image](https://github.com/user-attachments/assets/33d1e312-4fd0-4d6f-a9bd-8bb0e305a123)
-THen Select Another Kernal->Python Environments->env/bin/Python
+
+Then Select Another Kernal->Python Environments->env/bin/Python
 ![image](https://github.com/user-attachments/assets/6d4b76ac-1fe1-494b-8694-044cf801ee37)
 
 # Install Pytorch
@@ -643,6 +309,7 @@ Installing collected packages: mpmath, typing-extensions, sympy, pillow, numpy, 
 Successfully installed MarkupSafe-2.1.5 filelock-3.16.1 fsspec-2025.3.0 jinja2-3.1.6 mpmath-1.3.0 networkx-3.1 numpy-1.24.4 pillow-10.4.0 sympy-1.13.3 torch-2.4.1 torchaudio-2.4.1 torchvision-0.19.1 typing-extensions-4.13.2
 (/Users/jkozik/projects/MacMiniSetup/env) jkozik@Jacks-Mac-mini MacMiniSetup %
 ```
+These packages are installed just for this project directory, enabled by this particular conda environment.  After I learned how this worked, I realized this is a distant cousin of docker containers.  For all the version dependencies that live in the python package world mean that you need unique, isolated, environments per project. I continue to learn that there are several environment managers for python and slightly different choices available for the MacOS world. 
 ## Also some data packages
 ```
 (/Users/jkozik/projects/MacMiniSetup/env) jkozik@Jacks-Mac-mini MacMiniSetup % conda install jupyter pandas numpy matplotlib scikit-learn tqdm
@@ -1031,6 +698,20 @@ Verifying transaction: done
 Executing transaction: done
 (/Users/jkozik/projects/MacMiniSetup/env) jkozik@Jacks-Mac-mini MacMiniSetup %
 ```
+I wanted to show this.  In the linux world, I would have done this with pip install and not conda install.  I don't appreciate the distinction.  Someday, I will. 
+## Run benchmarks
+I ran the `01_cifar10_tinyvgg.ipynb` notebood.  It ran a benchmark that trains a pytorch models on 50000 images.  On the first pass, it uses the M4's CPU-only.  The next pass it reruns the training on the same input, but use's the M4's GPU.  At the tail end of the notebook, the following graph is plotted. 
+![image](https://github.com/user-attachments/assets/b33ccf2c-4062-4072-97c6-380043f8b81a)
+This CPU was 1739.810 seconds, the GPU was 188.117 seconds, about 10X improvement in training time with the M4 GPU.
+
+# Conclusion
+I bought a [Mac Mini M4](https://www.apple.com/shop/buy-mac/mac-mini/m4) for AI work.  I have been doing AI work w/Pytorch on my Dell Intel CPU.  I am looking for somethings significantly faster, but I am reluctant to buy a big NVIDIA GPU, at least for now.
+
+This Setup helps me verify that I have the basic understanding to setup and use my M4 for AI work. Once setup and stable, I plan to put it in my server rack.  I dont want to use this as a desktop replacement, thus the extra effort to get remote access working.  
+# References
+This was a clone from 
+-[pytorch-apple-silicon](https://github.com/mrdbourke/pytorch-apple-silicon) by [mrdbourke](https://github.com/mrdbourke)
+-[Setup Mac for Machine Learning with PyTorch in 11 minutes (works for all M1, M2)](https://www.youtube.com/watch?v=Zx2MHdRgAIc)
 
 
 
