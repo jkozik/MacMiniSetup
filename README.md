@@ -502,3 +502,22 @@ Log out, log back in and verify some basics. Verify that the "base" shows in the
 Python 3.12.9
 (base) jkozik@Jacks-Mac-mini ~ %
 ```
+# Setup VSCode Remote
+To make sure that everything is setup correctly, open up VSCode remotely.  From the home directory, install Jupyter Notebook extension.
+![image](https://github.com/user-attachments/assets/fae69cbb-5f19-4acc-86c5-2f9a48f15218)
+Then in a project folder, create an empty .ipynb file. VScode will recognize that this is a jupyteThr notebook and prompt to install python extension.
+
+![image](https://github.com/user-attachments/assets/767ff1b4-09c5-4dd2-b722-f2f65dcd4655)
+
+In the upper right of the vscode scren, there's a Select Kernal button.  VSCode will prompt for what environment to run.  Look for the one with conda in the path.
+![image](https://github.com/user-attachments/assets/91050e87-0465-4308-b1d8-e0e0f68e844a)
+Next try a simple arithmetic operation.  Note:  VSCode will prompt to install a kernal package.  This is normal.
+
+![image](https://github.com/user-attachments/assets/f3f86573-fb8c-4249-a5b5-c11e1065b27b)
+
+After the install, the notebook will show a result
+
+![image](https://github.com/user-attachments/assets/49c6b366-0fda-407a-983f-598410ce3e85)
+
+
+
