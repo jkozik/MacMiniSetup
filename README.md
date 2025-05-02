@@ -582,6 +582,11 @@ Executing transaction: done
 (base) jkozik@Jacks-Mac-mini MacMiniSetup % conda activate /Users/jkozik/projects/MacMiniSetup/env
 (/Users/jkozik/projects/MacMiniSetup/env) jkozik@Jacks-Mac-mini MacMiniSetup %
 ```
+## Update VSCode Kernal to point to new environment
+Look at the VSCode screen and select the base enviroment on the upper right.
+![image](https://github.com/user-attachments/assets/33d1e312-4fd0-4d6f-a9bd-8bb0e305a123)
+THen Select Another Kernal->Python Environments->env/bin/Python
+![image](https://github.com/user-attachments/assets/6d4b76ac-1fe1-494b-8694-044cf801ee37)
 
 
 
