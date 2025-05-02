@@ -520,4 +520,69 @@ After the install, the notebook will show a result
 ![image](https://github.com/user-attachments/assets/49c6b366-0fda-407a-983f-598410ce3e85)
 
 
+## Setup a conda for Python 3.8
+To use Pytorch, the current version of Python wont work on Apple Silicon.  (So I am told).  Thus conda is used to setup an environment a Python 3.8 environment.  
+```
+(base) jkozik@Jacks-Mac-mini ~ % cd projects
+(base) jkozik@Jacks-Mac-mini projects % cd MacMiniSetup
+(base) jkozik@Jacks-Mac-mini MacMiniSetup % conda create --prefix ./env python=3.8
+Channels:
+ - conda-forge
+Platform: osx-arm64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: /Users/jkozik/projects/MacMiniSetup/env
+
+  added / updated specs:
+    - python=3.8
+
+
+The following NEW packages will be INSTALLED:
+
+  bzip2              conda-forge/osx-arm64::bzip2-1.0.8-h99b78c6_7
+  ca-certificates    conda-forge/noarch::ca-certificates-2025.4.26-hbd8a1cb_0
+  libffi             conda-forge/osx-arm64::libffi-3.4.6-h1da3d7d_1
+  liblzma            conda-forge/osx-arm64::liblzma-5.8.1-h39f12f2_0
+  liblzma-devel      conda-forge/osx-arm64::liblzma-devel-5.8.1-h39f12f2_0
+  libsqlite          conda-forge/osx-arm64::libsqlite-3.49.1-h3f77e49_2
+  libzlib            conda-forge/osx-arm64::libzlib-1.3.1-h8359307_2
+  ncurses            conda-forge/osx-arm64::ncurses-6.5-h5e97a16_3
+  openssl            conda-forge/osx-arm64::openssl-3.5.0-h81ee809_0
+  pip                conda-forge/noarch::pip-24.3.1-pyh8b19718_0
+  python             conda-forge/osx-arm64::python-3.8.20-h7d35d02_2_cpython
+  readline           conda-forge/osx-arm64::readline-8.2-h1d1bf99_2
+  setuptools         conda-forge/noarch::setuptools-75.3.0-pyhd8ed1ab_0
+  tk                 conda-forge/osx-arm64::tk-8.6.13-h5083fa2_1
+  wheel              conda-forge/noarch::wheel-0.45.1-pyhd8ed1ab_0
+  xz                 conda-forge/osx-arm64::xz-5.8.1-h9a6d368_0
+  xz-gpl-tools       conda-forge/osx-arm64::xz-gpl-tools-5.8.1-h9a6d368_0
+  xz-tools           conda-forge/osx-arm64::xz-tools-5.8.1-h39f12f2_0
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages:
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate /Users/jkozik/projects/MacMiniSetup/env
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+(base) jkozik@Jacks-Mac-mini MacMiniSetup % conda activate /Users/jkozik/projects/MacMiniSetup/env
+(/Users/jkozik/projects/MacMiniSetup/env) jkozik@Jacks-Mac-mini MacMiniSetup %
+```
+
+
+
 
