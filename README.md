@@ -709,7 +709,7 @@ I bought a [Mac Mini M4](https://www.apple.com/shop/buy-mac/mac-mini/m4) for AI 
 
 This Setup helps me verify that I have the basic understanding to setup and use my M4 for AI work. Once setup and stable, I plan to put it in my server rack.  I dont want to use this as a desktop replacement, thus the extra effort to get remote access working.  
 # References
-This was a clone from 
+This was a clone from mrdbourke repositories. 
  - [pytorch-apple-silicon](https://github.com/mrdbourke/pytorch-apple-silicon) by [mrdbourke](https://github.com/mrdbourke)
  - [Setup Mac for Machine Learning with PyTorch in 11 minutes (works for all M1, M2)](https://www.youtube.com/watch?v=Zx2MHdRgAIc)
 
