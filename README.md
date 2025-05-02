@@ -493,3 +493,12 @@ unset __mamba_setup
 Thank you for installing Miniforge3!
 jkozik@Jacks-Mac-mini ~ %    
 ```
+## Verify
+Log out, log back in and verify some basics. Verify that the "base" shows in the prompt.  Also verify that python works through the miniforge local path. 
+```
+(base) jkozik@Jacks-Mac-mini ~ % where python
+/Users/jkozik/miniforge3/bin/python
+(base) jkozik@Jacks-Mac-mini ~ % python --version
+Python 3.12.9
+(base) jkozik@Jacks-Mac-mini ~ %
+```
