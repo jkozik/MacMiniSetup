@@ -712,6 +712,9 @@ This Setup helps me verify that I have the basic understanding to setup and use 
 This was a clone from mrdbourke repositories. 
  - [pytorch-apple-silicon](https://github.com/mrdbourke/pytorch-apple-silicon) by [mrdbourke](https://github.com/mrdbourke)
  - [Setup Mac for Machine Learning with PyTorch in 11 minutes (works for all M1, M2)](https://www.youtube.com/watch?v=Zx2MHdRgAIc)
+ - [python environment setup on Apple Silicon | M1, M1 Pro/Max with Conda-forge](https://www.youtube.com/watch?v=2Acht_5_HTo) by [Alex Ziskind](https://www.youtube.com/@AZisk)
+
+
 
 
 
